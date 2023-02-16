@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,200&family=Roboto:wght@300;400;900&display=swap');
+
+
+/*scrollbar*/
+*::-webkit-scrollbar{
+    width: 10px;
+}
+*::-webkit-scrollbar-track{
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: rgb(102, 102, 102);
+}
+body{
+    overflow: overlay;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(102, 102, 102) transparent;
+/*^^scrollbar^^*/
+}
+*{
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0.7;
+    background-image: url(../img/background.jpg);
+    height: 100vh;
+}
+.parallax{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-box{
+    padding: 3vh;
+    background-color: black;
+}
+.title-box h1{
+    letter-spacing: 2vh;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+}
+section{
+    padding: 10vh;
+}
+section h2, p{
+    line-height: 3.7vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+section p{
+    font-size: 1.9vh;
+}
+.white-bg{
+    background-color: rgb(235, 235, 235);
+}
+.white-bg h2{
+    color: rgb(92, 92, 92);
+}
+.img-text-1, .img-text-2{
+    text-transform: uppercase;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.img-text-1, .img-text-2 h3{
+    text-shadow: 
+            -1px -1px 0px #000, 
+            -1px 1px 0px #000,                    
+            1px -1px 0px #000,                  
+            1px 0px 0px #000;
+
+    color: white;
+    letter-spacing: 1.7vh;
+    font-size: 5vh;
+}
+.img-text-1{
+    background-image: url(../img/city.jpg);
+}
+.img-text-2{
+    background-image: url(../img/sky.jpg);
+}
+.black-bg{
+    color: rgb(207, 207, 207);
+    background-color: #282e34;
+}
